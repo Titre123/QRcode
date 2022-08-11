@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode</title>
+    <link href="./qrcode.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00a7e97456.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="./qr-code-component-main/images/image-qr-code.png" >
+        </div>
+        <div class="text">
+            <h3>Improve your front-end skills by building projects</h3>
+            <p>Scan the QR code to visit <span>Frontend Mentor</span> and take your coding skills
+                to the next level
+            </p>
+            <p class="moon">
+                <i class="fa-solid fa-moon" id="moon"></i>
+                <span class="dark">Dark Mode</span>
+            </p>
+        </div>
+    </div>
+    <script>
+        var text_moon = document.getElementsByClassName("moon")[0]
+        var icon = document.getElementById("moon")
+        var text = document.getElementsByClassName("dark")
+        text_moon.addEventListener("click", function(){
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")){
+                    icon.setAttribute("class", "fa-solid fa-sun");
+                    text[0].innerHTML = "Light Mode";
+
+                }
+                else{
+                    icon.setAttribute("class", "fa-solid fa-moon");
+                    text[0].innerHTML = "Dark Mode";
+                }
+            })
+    </script>
+</body>
+</html>
