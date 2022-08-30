@@ -6,8 +6,8 @@
     --hover: rgb(46, 42, 255);
     --paragraph: 15px;
     --family: 'outfit',sans-serif;
-    --weight_400 : 400;
-    --weight_700: 700;
+    --weight-400 : 400;
+    --weight-700: 700;
 }
 
 *,*::after,*::before{
