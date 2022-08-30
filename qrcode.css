@@ -151,10 +151,3 @@ span:not(.dark){
     border-radius: 50%;
     padding: 0.37em 0;
 }
-
-.light{
-    display: none;
-}
-.light::after{
-    content: "Light Mode";
-}
